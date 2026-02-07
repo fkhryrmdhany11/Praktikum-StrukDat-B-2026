@@ -1,15 +1,37 @@
-list = ['TI', 'TE', 'TS']
-list1 = [10, 11, 12]
-list2 = [True, False, True]
-list3 = [17, 'Agustus', True]
+mindgames = ["sudoku", "minesweeper", "catur"] 
+# Membuat list bernama mindgames yang berisi tiga data string menggunakan tanda kurung siku [].
+print(mindgames) 
+# Gunakan fungsi print() untuk menampilkan seluruh isi list
 
-print(list)
-print(list[0])
-print(len(list))
+mindgames = ["sudoku", "minesweeper", "catur"] 
+# Membuat list
+print(mindgames[0]) 
+# Mengambil item pada index ke-0, index di python mulai dari 0, sehingga hasilnya adalah "sudoku"
 
+mindgames = ["sudoku", "minesweeper", "catur"] 
+# Membuat list
+mindgames[1] = "go" 
+# Mengubah nilai pada index ke-1 dari "minesweeper" menjadi "go"
+print(mindgames) 
+# Menampilkan list setelah diubah
 
-list5 = ['A', 'B', 'C', 'D', 'E']
-list6 = []
-for x in list5:
-    list6.append(x)
-    print(list6)
+mindgames = ["sudoku", "minesweeper"] 
+# Membuat list
+mindgames.append("catur") 
+# Gunakan method append() untuk menambahkan item baru ke bagian akhir list
+print(mindgames) 
+# Menampilkan hasil list terbaru
+
+mindgames = ["sudoku", "minesweeper", "catur"] 
+# Membuat list
+mindgames.remove("minesweeper") 
+# Gunakan method remove() untuk menghapus item berdasarkan nilainya yaitu "minesweeper"
+print(mindgames) 
+# Menampilkan list setelah item dihapus
+
+mindgames = ["sudoku", "minesweeper", "catur"] 
+# Membuat list
+for x in mindgames: 
+# Perulangan for membaca setiap item dalam list dan menyimpannya ke variabel x
+    print(x) 
+    # Menampilkan tiap item satu per satu
