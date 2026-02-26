@@ -12,11 +12,13 @@ mahasiswa = {
              "ipk": 3.75}
 }
 
-for nim, data in mahasiswa.items():
+for  data in mahasiswa.values():
     if data['ipk'] > 3.5:
-        print(nim + ':', data)
+        print(f'mahasiswa dengan ipk di atas 3.5 : {data['nama']}')
 
-# jumlah = 0
-# banyak = 0
-# for nim, data in mahasiswa.items():
-#   print(x)
+rata = sum(data['ipk'] for data in mahasiswa.values()) / len(mahasiswa)
+
+print(f'rata rata ipk {rata: .2f}')
+
+mahasiswa['A004'] = {'nama' : 'wowo', 'prodi' : 'persawitan', 'ipk' : 3.00}
+print(mahasiswa)
